@@ -8,6 +8,7 @@ mkdir -p ~/.config/i3
 mkdir -p ~/.config/compton
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/alacritty
+touch ~/.tmux.conf
 
 pip3 install --user pywal
 export PATH="${PATH}:${HOME}/.local/bin/"
@@ -16,5 +17,9 @@ cp .config/i3/config ~/.config/i3/config
 cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 cp .config/i3/i3status.conf ~/.config/i3/i3status.conf
 cp .config/rofi/config ~/.config/rofi/config
+cp .config/.tmux.conf ~/.tmux.conf
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+sudo apt update && sudo apt upgrade -y
+sudo apt-get purge nikto crackmapexec -y
