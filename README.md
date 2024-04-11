@@ -1,4 +1,4 @@
 # kali-kapkan
-Just a kali clean version home made (like porn)
+Just a home made version of the XCT kali clean, with a bit more of customizzation and other stuff (like porn)
 
 ![alt text](femboy.png)
