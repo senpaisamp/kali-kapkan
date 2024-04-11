@@ -9,6 +9,9 @@ mkdir -p ~/.config/compton
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/alacritty
 
+pip3 install --user pywal
+export PATH="${PATH}:${HOME}/.local/bin/"
+
 cp .config/i3/config ~/.config/i3/config
 cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 cp .config/i3/i3status.conf ~/.config/i3/i3status.conf
