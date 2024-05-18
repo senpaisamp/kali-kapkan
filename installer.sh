@@ -23,14 +23,10 @@ ninja
 sudo ninja install
 cd ../..
 
-pip3 install --user pywal
-export PATH="${PATH}:${HOME}/.local/bin/"
-
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/compton
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/alacritty
-touch ~/.tmux.conf
 
 cp .config/i3/config ~/.config/i3/config
 cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
@@ -40,9 +36,5 @@ cp .config/rofi/config ~/.config/rofi/config
 cp .fehbg ~/.fehbg
 cp .config/i3/clipboard_fix.sh ~/.config/i3/clipboard_fix.sh
 cp -r .wallpaper ~/.wallpaper 
-cp .config/.tmux.conf ~/.tmux.conf
-
-echo "fatto!
-echo "ricordati di modificare icone e cose varie con lxappearancee seleziona arc-dark"
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
